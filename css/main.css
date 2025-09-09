@@ -2906,3 +2906,42 @@ input, select, textarea {
 			}
 
 	}
+
+
+
+
+/*  9月8日新增*/
+	/* Intro paragraph tuning */
+.intro-text {
+  max-width: 140ch;          /* 控制行宽，提升可读性 */
+  margin: 0 auto 1.2rem;    /* 居中并留出段后距 */
+}
+
+.intro-text p {
+  color: #fff;
+  font-size: 16px;          /* 桌面端基准 16px */
+  line-height: 1.7;
+  text-align: left;         /* 英文建议左对齐，避免两端对齐产生“河流” */
+  text-justify: auto;
+  hyphens: auto;            /* 需要上面 HTML 里有 lang="en" 才有效 */
+}
+
+/* 链接样式：保证对比与可读性 */
+.intro-text a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* 大屏稍微放大一点 */
+@media (min-width: 1200px) {
+  .intro-text p { font-size: 17px; }
+}
+
+/* 小屏略微缩小，避免挤压 */
+@media (max-width: 736px) {
+  .intro-text { padding: 0 12px; }
+  .intro-text p { font-size: 15px; line-height: 1.6; }
+}
+
+
+
